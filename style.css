@@ -1,0 +1,105 @@
+* {
+    /* 產生框線，為實心線條，粗細2px，黑色 */
+    /* border: solid 2px yellow; */
+}
+/* 整個視窗畫面設定 */
+html, body {
+    /* 設定背景顏色為淡粉色 */
+    background-color: #ffb6c1;
+    /* 設定視窗的高度為100% */
+    height: 100%;
+    /* 設定視窗的寬度為100% */
+    width: 100%;
+    /* 把.box置於視窗的上下左右的中間 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #fff;
+    /* 設定寬度為380px，且置中在視窗中間 */
+    width: 380px;
+    /* 添加陰影 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* margin: 0 auto; */
+}
+
+.top {
+    /* 連結一個網頁的圖片當作.top的背景圖片 */
+    background-image: url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+    /* .top的高設定為330px，背景圖要充滿整個.top內 */
+    height: 330px;
+    background-size: cover;
+    /* 把h2的文字置於.top的下方，且文字靠左 */
+    display: flex;
+    align-items: flex-end;
+    position: relative; /* 新增這行以便定位 .circle */
+}
+
+.top h2 {
+    /* 設定文字顏色為白色 */
+    color: #fff;
+    /* 距離下方的外距為20px，距離左方的外距為10px */
+    margin-bottom: 20px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    width: 100%;
+    /* 產生一個背景為黑色，由下到上的漸層 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.title-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    text-decoration: underline;
+}
+
+.smallText {
+    font-size: 14px;
+    /* 字的顏色改為米色 */
+    color: #f5deb3;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ffb6c1; /* 淡粉色 */
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    bottom: -25px;
+}
+
+ul {
+    list-style-type: none; /* 移除項目符號 */
+    padding-left: 5px; /* 設定靠左 5px */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btnwebsite {
+    background-color: #ffb6c1; /* 淡粉色 */
+}
+
+.btnnews {
+    background-color: #555; /* 灰色 */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
